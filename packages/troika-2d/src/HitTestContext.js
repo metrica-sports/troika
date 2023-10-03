@@ -6,8 +6,8 @@
  * whether an Object2DFacade is under the mouse cursor, by passing this as the context
  * to its render() method.
  */
-
-const hitTestContext = document.createElement('canvas').getContext('2d')
+const canvas = typeof document === 'undefined' ? new OffscreenCanvas() : document.createElement('canvas')
+const hitTestContext = canvas.getContext('2d')
 hitTestContext.save()
 
 /**
