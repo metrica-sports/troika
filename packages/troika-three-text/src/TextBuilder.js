@@ -164,7 +164,7 @@ function getTextRenderInfo(args, callback) {
   const glyphsPerRow = (textureWidth / sdfGlyphSize * 4)
   let atlas = atlases[sdfGlyphSize]
   if (!atlas) {
-    const canvas = typeof document === 'undefined' ? new OffscreenCanvas() : document.createElement('canvas')
+    const canvas = typeof document === 'undefined' ? new OffscreenCanvas(300, 150) : document.createElement('canvas')
     canvas.width = textureWidth
     canvas.height = sdfGlyphSize * 256 / glyphsPerRow // start tall enough to fit 256 glyphs
     atlas = atlases[sdfGlyphSize] = {

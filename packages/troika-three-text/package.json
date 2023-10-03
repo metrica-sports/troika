@@ -1,5 +1,5 @@
 {
-  "name": "troika-three-text",
+  "name": "@metrica-sports/troika-three-text",
   "description": "SDF-based text rendering for Three.js",
   "version": "1.0.0",
   "author": {

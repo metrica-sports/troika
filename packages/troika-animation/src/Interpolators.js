@@ -50,7 +50,7 @@ const colorValueToNumber = (function() {
 
       // 2D canvas for evaluating string values
       if (!colorCanvas) {
-        colorCanvas = typeof document === 'undefined' ? new OffscreenCanvas() : document.createElement('canvas')
+        colorCanvas = typeof document === 'undefined' ? new OffscreenCanvas(300, 150) : document.createElement('canvas')
         colorCanvasCtx = colorCanvas.getContext('2d')
       }
 

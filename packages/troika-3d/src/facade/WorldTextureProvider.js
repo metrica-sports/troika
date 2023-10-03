@@ -76,7 +76,7 @@ export function makeWorldTextureProvider(WrappedFacadeClass) {
         }
         if (newWorldConfig) {
           this.worldTexture.dispose()
-          const canvas = typeof document === 'undefined' ? new OffscreenCanvas() : document.createElement('canvas')
+          const canvas = typeof document === 'undefined' ? new OffscreenCanvas(300, 150) : document.createElement('canvas')
           canvas.width = newWorldConfig.width
           canvas.height = newWorldConfig.height
           this.worldTexture = new CanvasTexture(canvas)
