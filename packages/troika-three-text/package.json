@@ -1,12 +1,12 @@
 {
   "name": "@metrica-sports/troika-three-text",
+  "version": "1.1.0",
   "description": "SDF-based text rendering for Three.js",
-  "version": "1.0.1",
   "author": {
     "name": "Metrica Sports",
     "email": "info@metrica-sports.com"
   },
-  "versionForked": "0.48.1",
+  "versionForked": "0.49.1",
   "authorForked": {
     "name": "Jason Johnston",
     "email": "jason.johnston@protectwise.com"
@@ -26,15 +26,15 @@
   "module:src": "src/index.js",
   "dependencies": {
     "bidi-js": "^1.0.2",
-    "troika-three-utils": "^0.48.0",
-    "troika-worker-utils": "^0.48.0",
+    "troika-three-utils": "^0.49.0",
+    "troika-worker-utils": "^0.49.0",
     "webgl-sdf-generator": "1.1.1"
   },
   "peerDependencies": {
     "three": ">=0.125.0"
   },
   "devDependencies": {
-    "@fredli74/typr": "0.3.8",
+    "@lojjic/typr": "0.3.8-lojjic1",
     "@unicode-font-resolver/client": "1.0.2",
     "fflate": "^0.7.0",
     "node-fetch": "^2.6.0"
