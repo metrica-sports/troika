@@ -247,7 +247,7 @@ export function createTypesetter(resolveFonts, bidi) {
             baseline: -halfLeading - ascender * fontSizeMult, // baseline offset from top of line height
             // cap: -halfLeading - capHeight * fontSizeMult, // cap from top of line height
             // ex: -halfLeading - xHeight * fontSizeMult, // ex from top of line height
-            caretTop: (ascender + descender) / 2 * fontSizeMult + caretHeight / 2,
+            caretTop,
             caretBottom: caretTop - caretHeight
           }
           metricsByFont.set(fontObj, fontData)
@@ -256,7 +256,7 @@ export function createTypesetter(resolveFonts, bidi) {
 
         const runText = text.slice(run.start, run.end + 1)
         let prevGlyphX, prevGlyphObj
-        fontObj.forEachGlyph(runText, fontSize, letterSpacing, (glyphObj, glyphX, charIndex) => {
+        fontObj.forEachGlyph(runText, fontSize, letterSpacing, (glyphObj, glyphX, glyphY, charIndex) => {
           glyphX += prevRunEndX
           charIndex += run.start
           prevGlyphX = glyphX
@@ -314,6 +314,7 @@ export function createTypesetter(resolveFonts, bidi) {
           let fly = currentLine.glyphAt(currentLine.count)
           fly.glyphObj = glyphObj
           fly.x = glyphX + lineXOffset
+          fly.y = glyphY
           fly.width = glyphWidth
           fly.charIndex = charIndex
           fly.fontData = fontData
@@ -389,7 +390,7 @@ export function createTypesetter(resolveFonts, bidi) {
             anchorY === 'top-ex' ? -lines[0].ex :
             anchorY === 'middle' ? totalHeight / 2 :
             anchorY === 'bottom' ? totalHeight :
-            anchorY === 'bottom-baseline' ? lines[lines.length - 1].baseline :
+            anchorY === 'bottom-baseline' ? -lines[lines.length - 1].baseline :
             parsePercent(anchorY) * totalHeight
         }
       }
@@ -554,7 +555,7 @@ export function createTypesetter(resolveFonts, bidi) {
 
                 // Determine final glyph position and add to glyphPositions array
                 const glyphX = glyphInfo.x + anchorXOffset
-                const glyphY = line.baseline + anchorYOffset
+                const glyphY = glyphInfo.y + line.baseline + anchorYOffset
                 glyphPositions[idx * 2] = glyphX
                 glyphPositions[idx * 2 + 1] = glyphY
 
@@ -684,7 +685,7 @@ export function createTypesetter(resolveFonts, bidi) {
   function TextLine() {
     this.data = []
   }
-  const textLineProps = ['glyphObj', 'x', 'width', 'charIndex', 'fontData']
+  const textLineProps = ['glyphObj', 'x', 'y', 'width', 'charIndex', 'fontData']
   TextLine.prototype = {
     width: 0,
     lineHeight: 0,
