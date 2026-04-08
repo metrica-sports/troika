@@ -3,6 +3,147 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [0.52.4](https://github.com/protectwise/troika/compare/v0.52.3...v0.52.4) (2025-04-02)
+
+
+### Bug Fixes
+
+* error in Three r175 with custom(Depth|Distance)Material not having setters ([78e00b5](https://github.com/protectwise/troika/commit/78e00b512eb9618623d248070ba75ea0c55803ee)), closes [#357](https://github.com/protectwise/troika/issues/357)
+
+
+
+
+
+## [0.52.3](https://github.com/protectwise/troika/compare/v0.52.2...v0.52.3) (2024-12-19)
+
+
+### Bug Fixes
+
+* **troika-three-text:** Fix error in Safari in BatchedText ([2260ba0](https://github.com/protectwise/troika/commit/2260ba0c92b582928402c57d721bfe8b3fa41855))
+
+
+
+
+
+## [0.52.2](https://github.com/protectwise/troika/compare/v0.52.1...v0.52.2) (2024-11-21)
+
+
+### Bug Fixes
+
+* **BatchedText:** Fix removing text instances ([8bf4bca](https://github.com/protectwise/troika/commit/8bf4bca24e0aa05c681f183edfaaca7620e2eefd))
+* **BatchedText:** Fix texture memory leak ([908fe31](https://github.com/protectwise/troika/commit/908fe314233db7201aa72710b9ec2697158fee79))
+
+
+
+
+
+## [0.52.1](https://github.com/protectwise/troika/compare/v0.52.0...v0.52.1) (2024-11-21)
+
+
+### Bug Fixes
+
+* **BatchedText:** Fix removing text instances via .remove() ([d99549f](https://github.com/protectwise/troika/commit/d99549fa39ce05d04f1d3636e0ef0a1e954341ce))
+
+
+
+
+
+# [0.52.0](https://github.com/protectwise/troika/compare/v0.51.1...v0.52.0) (2024-11-11)
+
+
+### Features
+
+* **BatchedText:** Support remaining visual properties ([60c5e93](https://github.com/protectwise/troika/commit/60c5e93ae5068f153240c5cfa1a109c01e4a4f51))
+
+
+
+
+
+## [0.51.1](https://github.com/protectwise/troika/compare/v0.51.0...v0.51.1) (2024-11-11)
+
+
+### Bug Fixes
+
+* **troika-worker-utils:** Avoid no-workers log errors when forcing main thread ([d396e51](https://github.com/protectwise/troika/commit/d396e51708d151d9cee04394d3cd8ac87c1a7dc0)), closes [#337](https://github.com/protectwise/troika/issues/337)
+
+
+
+
+
+# [0.51.0](https://github.com/protectwise/troika/compare/v0.50.3...v0.51.0) (2024-11-10)
+
+
+### Bug Fixes
+
+* **BatchedText:** Fix texel read for taller data texture ([57f3b0b](https://github.com/protectwise/troika/commit/57f3b0bfa6f13d7311d51e1cb4c3b0e1caf17458))
+* **troika-three-text:** Fix error when first character is whitespace [#313](https://github.com/protectwise/troika/issues/313) ([f71679e](https://github.com/protectwise/troika/commit/f71679e97a3850057ff85054d10326c8100c5328))
+
+
+### Features
+
+* **BatchedText:** support fillOpacity, and color now sets the `diffuse` uniform ([8f83424](https://github.com/protectwise/troika/commit/8f8342447f3fe4a31420cf46fdb191ddc0afb929))
+* **troika-three-text:** Add config to disable web worker ([86023ec](https://github.com/protectwise/troika/commit/86023ecd1ce00cebc3094088f935de5c129d5201)), closes [#337](https://github.com/protectwise/troika/issues/337)
+* **troika-worker-utils:** Add a handle to force running worker modules on main thread ([4f8bc13](https://github.com/protectwise/troika/commit/4f8bc13cf32a1665e2177ab2f62f60f2fe17ad66))
+
+
+
+
+
+## [0.50.3](https://github.com/protectwise/troika/compare/v0.50.2...v0.50.3) (2024-11-01)
+
+
+### Bug Fixes
+
+* ensure high precision sampling of batched text data texture ([f8bd307](https://github.com/protectwise/troika/commit/f8bd3076a08136ad8be29eb7ea0292bbf80ceab9))
+* Error in derived materials in Three r170 ([2402026](https://github.com/protectwise/troika/commit/240202662447040c0255f39e6c296207ba9a5457))
+
+
+
+
+
+## [0.50.2](https://github.com/protectwise/troika/compare/v0.50.1...v0.50.2) (2024-10-21)
+
+
+### Bug Fixes
+
+* **troika-three-text:** BatchedText: increase number of batch members ([449957d](https://github.com/protectwise/troika/commit/449957dfed3adbcb64cd71d181a82ce4ff8ed822))
+* BatchedText3DFacade: child texts now trigger renders on update ([f2c6e0d](https://github.com/protectwise/troika/commit/f2c6e0d6c9292a87930948f84d3fd99de3363096))
+
+
+
+
+
+## [0.50.1](https://github.com/protectwise/troika/compare/v0.50.0...v0.50.1) (2024-10-12)
+
+
+### Bug Fixes
+
+* **troika-three-text:** fix error when using BatchedText material color ([7f8c845](https://github.com/protectwise/troika/commit/7f8c845d02496c076bfcce7413bfd98a7c993d04))
+* **troika-three-text:** remove DoubleSide double draw hack in favor of forceSinglePass flag ([7818d05](https://github.com/protectwise/troika/commit/7818d05745f5ca44530aae774df13deafb35588a))
+
+
+
+
+
+# [0.50.0](https://github.com/protectwise/troika/compare/v0.49.1...v0.50.0) (2024-10-11)
+
+
+### Bug Fixes
+
+* **troika-three-utils:** add `colorspace_fragment` (introduced in Three r154) to the list of fragment shaders to process in `upgradeShaders()` ([#325](https://github.com/protectwise/troika/issues/325)) ([9169ebf](https://github.com/protectwise/troika/commit/9169ebf0773f9ad6cd10ab74456b68d1eebbe243))
+* change JSDoc for createDerivedMaterial params to be optional ([#307](https://github.com/protectwise/troika/issues/307)) ([6969e85](https://github.com/protectwise/troika/commit/6969e855608803d20c6634a415d2a78218222d79))
+
+
+### Features
+
+* **troika-three-text:** allow overriding text material derivation ([9a48e0c](https://github.com/protectwise/troika/commit/9a48e0c5d0c3b632359fc56ced67b1466efb65cc))
+* **troika-three-text:** ALPHA: BatchedText for batching many Text instances in a single draw call ([79c9c50](https://github.com/protectwise/troika/commit/79c9c50d0f8fec1e1d64e316d47fbb71fd164857))
+* **troika-three-utils:** add isDerivedFrom method to derived materials ([a4a2fcd](https://github.com/protectwise/troika/commit/a4a2fcd18ddf03cf6f9b6b72df2e2fbdfa700c51))
+
+
+
+
+
 ## [0.49.1](https://github.com/protectwise/troika/compare/v0.49.0...v0.49.1) (2024-04-09)
 
 

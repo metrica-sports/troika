@@ -3,6 +3,97 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [0.52.4](https://github.com/protectwise/troika/compare/v0.52.3...v0.52.4) (2025-04-02)
+
+
+### Bug Fixes
+
+* error in Three r175 with custom(Depth|Distance)Material not having setters ([78e00b5](https://github.com/protectwise/troika/commit/78e00b512eb9618623d248070ba75ea0c55803ee)), closes [#357](https://github.com/protectwise/troika/issues/357)
+
+
+
+
+
+## [0.52.3](https://github.com/protectwise/troika/compare/v0.52.2...v0.52.3) (2024-12-19)
+
+**Note:** Version bump only for package troika-3d-ui
+
+
+
+
+
+## [0.52.2](https://github.com/protectwise/troika/compare/v0.52.1...v0.52.2) (2024-11-21)
+
+**Note:** Version bump only for package troika-3d-ui
+
+
+
+
+
+## [0.52.1](https://github.com/protectwise/troika/compare/v0.52.0...v0.52.1) (2024-11-21)
+
+**Note:** Version bump only for package troika-3d-ui
+
+
+
+
+
+# [0.52.0](https://github.com/protectwise/troika/compare/v0.51.1...v0.52.0) (2024-11-11)
+
+**Note:** Version bump only for package troika-3d-ui
+
+
+
+
+
+## [0.51.1](https://github.com/protectwise/troika/compare/v0.51.0...v0.51.1) (2024-11-11)
+
+**Note:** Version bump only for package troika-3d-ui
+
+
+
+
+
+# [0.51.0](https://github.com/protectwise/troika/compare/v0.50.3...v0.51.0) (2024-11-10)
+
+**Note:** Version bump only for package troika-3d-ui
+
+
+
+
+
+## [0.50.3](https://github.com/protectwise/troika/compare/v0.50.2...v0.50.3) (2024-11-01)
+
+**Note:** Version bump only for package troika-3d-ui
+
+
+
+
+
+## [0.50.2](https://github.com/protectwise/troika/compare/v0.50.1...v0.50.2) (2024-10-21)
+
+**Note:** Version bump only for package troika-3d-ui
+
+
+
+
+
+## [0.50.1](https://github.com/protectwise/troika/compare/v0.50.0...v0.50.1) (2024-10-12)
+
+**Note:** Version bump only for package troika-3d-ui
+
+
+
+
+
+# [0.50.0](https://github.com/protectwise/troika/compare/v0.49.1...v0.50.0) (2024-10-11)
+
+**Note:** Version bump only for package troika-3d-ui
+
+
+
+
+
 ## [0.49.1](https://github.com/protectwise/troika/compare/v0.49.0...v0.49.1) (2024-04-09)
 
 **Note:** Version bump only for package troika-3d-ui
