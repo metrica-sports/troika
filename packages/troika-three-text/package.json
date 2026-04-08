@@ -1,11 +1,23 @@
 {
-  "name": "troika-three-text",
-  "version": "0.52.4",
+  "name": "@metrica-sports/troika-three-text",
+  "version": "1.2.0",
+  "versionForked": "0.52.4",
   "description": "SDF-based text rendering for Three.js",
-  "author": "Jason Johnston <jason.johnston@protectwise.com>",
+  "author": {
+    "name": "Metrica Sports",
+    "email": "info@metrica-sports.com"
+  },
+  "versionForked": "0.49.1",
+  "authorForked": {
+    "name": "Jason Johnston",
+    "email": "jason.johnston@protectwise.com"
+  },
+  "publishConfig": {
+    "registry": "https://npm.pkg.github.com/"
+  },
   "repository": {
     "type": "git",
-    "url": "https://github.com/protectwise/troika.git",
+    "url": "https://github.com/metrica-sports/troika.git",
     "directory": "packages/troika-three-text"
   },
   "license": "MIT",

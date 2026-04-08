@@ -50,6 +50,7 @@ export function createFontResolver(fontParser, unicodeFontResolverClient) {
   function doLoadFont(url, callback) {
     const onError = err => {
       console.error(`Failure loading font ${url}`, err)
+      callback({ supportsCodePoint: () => null })
     }
     try {
       const request = new XMLHttpRequest()
